@@ -7,6 +7,7 @@ export default function App() {
     const citiesArray = citiesData.data.cities;
     const cityElements = citiesArray.map(city => {
         return <City
+            key={city.id}
             id={city.id}
             sectionCss={city.sectionCss}
             imgCss={city.imgCss}
@@ -16,9 +17,12 @@ export default function App() {
 
     })
 
-    const issueElements = citiesArray.map(city => {
-        return <Issue id={city.id} issue={city.issue}/>
-    })
+    const issueElements = citiesArray.map(city =>
+        <Issue
+               key={city.id}
+               id={city.id}
+               airport={city.airport}/>
+    )
 
     return (
         <div className="relative scroll-smooth snap-y snap-mandatory h-screen overflow-y-scroll">
@@ -28,8 +32,8 @@ export default function App() {
             <div className="fixed bottom-4 left-6 w-1/3">
                 <p>
                     Colourful Cities is a project inspired by the <a href="https://lostin.com/" target="_blank" className="font-bold hover:underline hover:underline-offset-2">LOST iN </a>
-                    travel guides. <i>'For people who prefer their itineraries low-key and their souvenirs intangible—unless
-                    they’re of the impeccably-designed variety.'</i>
+                    travel guides. <i>"For people who prefer their itineraries low-key and their souvenirs intangible—unless
+                    they’re of the impeccably-designed variety."</i>
                     <br/>
                     <span className="font-light text-xs">&#169; Published by <a href="#">dawesydev</a></span>
                 </p>

@@ -6,5 +6,9 @@
   h1 {
     font-family: New Title, system-ui, sans-serif;
   }
+  p,
+  a {
+    font-family: Amulya, system-ui, sans-serif;
+  }
 }
 
