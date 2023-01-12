@@ -6,6 +6,7 @@ module.exports = {
   ],
   theme: {
     colors: {
+      'white': '#fff',
       'amsterdam': '#307be2',
       'berlin': '#026881',
       'buenos-aires': '#ae172c',
