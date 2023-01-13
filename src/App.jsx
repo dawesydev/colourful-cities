@@ -11,7 +11,8 @@ export default function App() {
             id={city.id}
             sectionCss={city.sectionCss}
             imgCss={city.imgCss}
-            url={city.url}
+            webp={city.webp}
+            jpeg={city.jpeg}
             alt={city.desc}
         />
 
