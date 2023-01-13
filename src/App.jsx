@@ -28,7 +28,7 @@ export default function App() {
 
     return (
             <div className="relative scroll-smooth snap-y snap-mandatory h-screen overflow-y-scroll">
-                <h1 className="fixed top-4 left-6 text-5xl font-bold uppercase tracking-wide">Colourful Cities</h1>
+                <h1 className="fixed top-4 left-6 text-5xl font-bold uppercase tracking-wide opacity-80">Colourful Cities</h1>
                 <div className="fixed bottom-4 left-6 w-1/3">
                     <p>
                         Colourful Cities is a project inspired by the <a href="https://lostin.com/" target="_blank" className="font-bold hover:underline hover:underline-offset-2">LOST iN </a>
@@ -36,7 +36,7 @@ export default function App() {
                         they’re of the impeccably-designed variety."</i>
                     </p>
                 </div>
-                <p className="fixed top-4 right-6 font-bold"><a href="#">hello@dawesy.dev</a></p>
+                <p className="fixed top-4 right-6 text-xs opacity-80 hover:opacity-50"><a href="mailto:hello@danieldawes.com">hello@danieldawes.com</a></p>
 
                 <div className="fixed bottom-4 right-6">
                     <ul className="flex flex-col">
